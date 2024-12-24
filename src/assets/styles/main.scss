@@ -1,0 +1,142 @@
+@import './taillwind';
+@import './primevue-reset';
+@import './transitions';
+@import 'mixins';
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+
+
+
+@font-face {
+	font-family: Lexend;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 200;
+	src: url('../fonts/Lexend/Lexend-Light.ttf');
+}
+
+@font-face {
+	font-family: Lexend;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: url('../fonts/Lexend/Lexend-Regular.ttf');
+}
+
+@font-face {
+	font-family: Lexend;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 500;
+	line-height: 1.75rem;
+	src: url('../fonts/Lexend/Lexend-Medium.ttf');
+}
+
+@font-face {
+	font-family: Lexend;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 600;
+	line-height: 1.75rem;
+	src: url('../fonts/Lexend/Lexend-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: Lexend;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	line-height: 1.75rem;
+	src: url('../fonts/Lexend/Lexend-Bold.ttf');
+}
+
+@font-face {
+	font-family: Lexend;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 800;
+	src: url('../fonts/Lexend/Lexend-ExtraBold.ttf');
+}
+
+@font-face {
+	font-family: Lexend;
+	font-style: normal;
+	font-display: swap;
+	font-weight: 900;
+	src: url('../fonts/Lexend/Lexend-Black.ttf');
+}
+
+// Add your custom styles for scrollbars here
+::-webkit-scrollbar {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: theme('colors.secondary.600');
+	border-radius: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: theme('colors.secondary.800');
+}
+
+
+body {
+	// background-color: theme('colors.secondary.800');
+
+}
+
+html {
+	font-family: Lexend, sans-serif;
+	line-height: 1.25rem;
+}
+
+
+i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a,
+nav a:hover {
+	text-decoration: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+
+
+.overlay {
+	@include overlay(rgba(255, 255, 255, 0.4), 1);
+}
+
+[dir='rtl'] {
+	nav i {
+		transform: rotateY(180deg);
+	}
+
+
+}
+
+.main-layout {
+	margin: auto;
+}
+
+.no-underline:hover {
+	text-decoration: none !important;
+}
+
+.p-divider-solid.p-divider-horizontal:before {
+	border-top-style: solid !important;
+}

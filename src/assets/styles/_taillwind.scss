@@ -1,0 +1,65 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+
+	@tailwind base;
+
+	@layer base {
+		h1 {
+			font-size: 3rem; // 48px
+			line-height: 1.2 // 56px
+		}
+
+		h2 {
+			font-size: 2.5rem; // 40px
+			line-height: 1.2 // 48px
+		}
+
+		h3 {
+			font-size: 2.25rem; // 36px
+			line-height: 1.2 // 44px
+		}
+
+		h4 {
+			font-size: 2rem; // 32px
+			line-height: 1.2 // 40px
+		}
+
+		h5 {
+			font-size: 1.75rem; // 28px
+			line-height: 1.2 // 36px
+		}
+
+		h6 {
+			font-size: 1.5rem; // 24px
+			line-height: 1.2 // 32px
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+
+
+	}
+}
+
+@layer tailwind-utilities {
+	@tailwind utilities;
+	@tailwind components;
+
+	@layer utilities {
+		.flex-center {
+			@apply flex items-center justify-center;
+		}
+
+		.form-group {
+			@apply flex flex-col mb-4;
+		}
+
+		.wrapper {
+			@apply bg-white rounded-lg pb-2 mb-8
+		}
+	}
+
+}
